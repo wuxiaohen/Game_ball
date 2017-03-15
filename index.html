@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/control.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/graphy.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+</head>
+
+<body>
+    <style media="all and (orientation:landscape)" type="text/css">
+    html,
+    body,
+    #canvas {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 99%;
+    }
+    
+    @media screen and (orientation: landscape) {
+        /*横屏 css*/
+        #canvas {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 99%;
+        }
+    }
+    
+    #fenshu {
+        background: linear-gradient(to right, black, brown);
+        color: blue;
+    }
+    
+    #portrait {
+        display: none;
+    }
+    </style>
+    </style>
+    <div id="fenshu">
+        分数: 0
+        <div id="score"></div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script type="text/javascript" defer="defer">
+    init();
+    requestAnimationFrame(main);
+    </script>
+</body>
+
+</html>
